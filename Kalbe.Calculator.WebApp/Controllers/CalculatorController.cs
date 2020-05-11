@@ -18,14 +18,14 @@ namespace Kalbe.Calculator.WebApp.Controllers
         [HttpGet]
         public IActionResult Multiplication()
         {
-            ViewData["EnvironmentName"] = _config.GetSection("Environment").Value;
+            ViewBag.EnvironmentName = _config.GetSection("Environment").Value;
             return View();
         }
 
         [HttpGet]
         public IActionResult Division()
         {
-            ViewData["EnvironmentName"] = _config.GetSection("Environment").Value;
+            ViewBag.EnvironmentName = _config.GetSection("Environment").Value;
             return View();
         }
 
@@ -33,7 +33,7 @@ namespace Kalbe.Calculator.WebApp.Controllers
         [HttpGet]
         public IActionResult Addition()
         {
-            ViewData["EnvironmentName"] = _config.GetSection("Environment").Value;
+            ViewBag.EnvironmentName = _config.GetSection("Environment").Value;
             return View();
         }
 
@@ -41,7 +41,7 @@ namespace Kalbe.Calculator.WebApp.Controllers
         [HttpGet]
         public IActionResult Substraction()
         {
-            ViewData["EnvironmentName"] = _config.GetSection("Environment").Value;
+            ViewBag.EnvironmentName = _config.GetSection("Environment").Value;
             return View();
         }
 
